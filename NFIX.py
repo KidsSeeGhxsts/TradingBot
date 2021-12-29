@@ -171,8 +171,8 @@ class NostalgiaForInfinityX(IStrategy):
 
     # Optional order type mapping.
     order_types = {
-        'buy': 'limit',
-        'sell': 'limit',
+        'buy': 'market',
+        'sell': 'market',
         'trailing_stop_loss': 'limit',
         'stoploss': 'limit',
         'stoploss_on_exchange': False,
