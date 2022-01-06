@@ -237,7 +237,16 @@ class BB_RPB_TSL_Tranz(IStrategy):
 
     # Run "populate_indicators()" only for new candle.
     process_only_new_candles = True
-
+   
+    order_types = {
+        'buy': 'market',
+        'sell': 'market',
+        'trailing_stop_loss': 'limit',
+        'stoploss': 'limit',
+        'stoploss_on_exchange': False,
+        'stoploss_on_exchange_interval': 60,
+        'stoploss_on_exchange_limit_ratio': 0.99
+    }
     # Disabled
     stoploss = -0.99
 
