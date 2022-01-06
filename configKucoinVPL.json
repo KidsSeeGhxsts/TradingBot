@@ -15,7 +15,7 @@
     "order_types": {
     	"buy": "market",
     	"sell": "market"
-    // ...
+
   },
 
     "bid_strategy": {
@@ -51,16 +51,15 @@
         },
         "pair_whitelist": [],
 "pair_blacklist": [
-            // Leverage tokens
+
             ".(3|3L|3S)/.",
-            // Fiat
+
             "(AUD|EUR|GBP|CHF|CAD|JPY)/.",
-            // Stable tokens
+
             "(BUSD|USDT|TUSD|USDC|CUSDT|DAI|USDN)/.",
-            // FAN Tokens
+
             "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*",
-            // Other Coins
-            // shitty performers on strats
+
             "(LPT|LTX|MIR|SXP|ZEC|VELO|JUP|REAP|BNB|ETH|BCH|THETA|XMR|GTO|PERL|MITH|HIVE|LYXE|BASIC|CHZ|POWR|LRC|BTC|MBOX|SLP|XVS|MEM|AMPL|XYM|RLY|POLX|CARR|SKEY|MASK|KLV|TLOS|KEEP|SUN|AVA|NKN|MLN|AAVE|LAYER|CIRUS|SUKU|TKY|AOA|LSS|SUTER|TCP|INTER|HTR|SOLVE|CIX100|ETHO|ZCX|DINO|MXW|DAPPT|ONT|XDC|XDB|GENS|ANKR|BAT|EOS|STX|POLK|CHR|XYO|VEGA|KRL|VIDT|ORN|REVV|WILD|HAI|OXT|AI|CTSI|MUSK|NORD|TLM|EDG|JAR|SUPER|XSR|VSYS|CBC|SCLP|MTV|SOUL|FEAR|STMX|SCLP|GLCH|CGG|GMEE|FORESTPLUS|TARA|LOCG|SWASH|XNL|SENSOSLP|MKR|HYDRA|DEGO|SENSO|)/.",
               ]
     },
