@@ -12,6 +12,12 @@
         "sell": 30,
         "unit": "minutes"
     },
+    "order_types": {
+    	"buy": "market",
+    	"sell": "market"
+    // ...
+  },
+
     "bid_strategy": {
         "price_side": "ask",
         "ask_last_balance": 0.0,
