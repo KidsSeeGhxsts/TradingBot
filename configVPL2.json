@@ -138,23 +138,23 @@
     },
     "pairlists": [    {
         "method": "VolumePairList",
-        "number_assets": 100,
+        "number_assets": 120,
         "sort_key": "quoteVolume",
         "refresh_period": 1800
     },
     {"method": "AgeFilter", "min_days_listed": 7},
-    {"method": "SpreadFilter", "max_spread_ratio": 0.005},
-    {"method": "PriceFilter", "low_price_ratio": 0.002},
+    {"method": "SpreadFilter", "max_spread_ratio": 0.0075},
+    {"method": "PriceFilter", "low_price_ratio": 0.003},
     {
         "method": "RangeStabilityFilter",
         "lookback_days": 3,
-        "min_rate_of_change": 0.1,
+        "min_rate_of_change": 0.3 ,
         "refresh_period": 1800
     },
     {
         "method": "VolatilityFilter",
         "lookback_days": 3,
-        "min_volatility": 0.0,
+        "min_volatility": 0.01,
         "max_volatility": 0.75,
         "refresh_period": 1800
     },
