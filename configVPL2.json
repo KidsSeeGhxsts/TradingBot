@@ -7,12 +7,13 @@
     "timeframe": "5m",
     "dry_run": false,
     "cancel_open_orders_on_exit": false,
+    "trading_mode": "spot",
     "unfilledtimeout": {
         "buy": 10,
         "sell": 30,
         "unit": "minutes"
     },
-    "bid_strategy": {
+    "entry_pricing": {
         "price_side": "ask",
         "ask_last_balance": 0.0,
         "use_order_book": false,
@@ -22,7 +23,7 @@
             "bids_to_ask_delta": 1
         }
     },
-    "ask_strategy": {
+    "exit_pricing": {
         "price_side": "bid",
         "use_order_book": false,
         "order_book_min": 1,
@@ -32,9 +33,10 @@
         "ignore_roi_if_buy_signal": false
     },
     "exchange": {
-        "name": "binance",
+        "name": "kucoin",
         "key": "",
         "secret": "",
+        "password":"",
         "ccxt_config": {
             "enableRateLimit": true
         },
@@ -47,16 +49,17 @@
             
                         // Exchange
             "(BNB)/.*",
+            "KCS/.*"
             // Leverage
             ".*(_PREMIUM|BEAR|BULL|HALF|HEDGE|UP|DOWN|[1235][SL])/.*",
             // Fiat
             "(AUD|BRZ|CAD|CHF|EUR|GBP|HKD|IDRT|JPY|NGN|RUB|SGD|TRY|UAH|USD|ZAR)/.*",
             // Stable
-            "(BUSD|CUSD|CUSDT|DAI|PAXG|SUSD|TUSD|USDC|USDN|USDP|USDT|VAI|UST|USTC)/.*",
+            "(BUSD|CUSD|CUSDT|DAI|PAXG|SUSD|TUSD|USDC|USDN|USDP|USDT|VAI|UST|USTC|AUSD)/.*",
             // FAN
             "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LAZIO|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PORTO|PSG|ROUSH|SANTOS|STV|TH|TRA|UCH|UFC|YBO)/.*",
             // Others
-            "(1EARTH|ILA|BOBA|CTXC|CWAR|HBAR|NMR|OMG|ONG|ARDR|PEOPLE|DMTR)/.*"
+            "(ALBT|CELO|REEF|MIR|TORN|AGIX|HIVE|WNXM|1EARTH|ILA|BOBA|CTXC|CWAR|HBAR|NMR|OMG|ONG|ARDR|PEOPLE|DMTR|MEM|AMPL|XYM|POLX|CARR|SKEY|KLV|KRL|KOK|DMTR|CHMB|CPOOL|MLS|RBS|SRBS|SYLO|VR|KARA|LUNA|SRBP|PSL|AI|QKC|EPK|BAX|UQC|ZBC|PLATO|ACA|XCN|MC|FTT|SRM|PRMX|SWP|XWG|PIAS|KICKS|TIME|BNX|WEMIX|HI.*|ALBT|ANC|CIX100)/.*"
             
             ".*1L/.*",
             ".*1S/.*",
@@ -195,12 +198,12 @@
         "enable_openapi": false,
         "jwt_secret_key": "71e50c81d4ecd5c86524def45d2e2d35d8ec7207ec406977c104719dd3b9afb5",
         "CORS_origins": [],
-        "username": "",
+        "username": "BinanceBot",
         "password": ""
     },
     "bot_name": "freqtrade",
     "initial_state": "running",
-    "forcebuy_enable": false,
+    "force_entry_enable": true,
     "internals": {
         "process_throttle_secs": 5
     }
