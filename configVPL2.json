@@ -11,6 +11,7 @@
     "unfilledtimeout": {
         "buy": 10,
         "sell": 30,
+        "exit_timeout_count": 0,
         "unit": "minutes"
     },
     "entry_pricing": {
@@ -33,13 +34,10 @@
         "ignore_roi_if_buy_signal": false
     },
     "exchange": {
-        "name": "kucoin",
+        "name": "binance",
         "key": "",
         "secret": "",
-        "password":"",
-        "ccxt_config": {
-            "enableRateLimit": true
-        },
+        "ccxt_config": {},
         "ccxt_async_config": {
             "enableRateLimit": true,
             "rateLimit": 50
