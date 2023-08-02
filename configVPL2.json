@@ -44,97 +44,18 @@
         },
         "pair_whitelist": [],
         "pair_blacklist": [
-            
-                        // Exchange
-            "(BNB)/.*",
-            "KCS/.*"
-            // Leverage
-            ".*(_PREMIUM|BEAR|BULL|HALF|HEDGE|UP|DOWN|[1235][SL])/.*",
+            // Exchange Tokens
+            "OKB/.*",
+            // Leverage tokens
+            ".*(3L|3S|5L|5S)/.*",
             // Fiat
             "(AUD|BRZ|CAD|CHF|EUR|GBP|HKD|IDRT|JPY|NGN|RUB|SGD|TRY|UAH|USD|ZAR)/.*",
-            // Stable
+            // Stable tokens
             "(BUSD|CUSD|CUSDT|DAI|PAXG|SUSD|TUSD|USDC|USDN|USDP|USDT|VAI|UST|USTC|AUSD)/.*",
-            // FAN
-            "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LAZIO|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PORTO|PSG|ROUSH|SANTOS|STV|TH|TRA|UCH|UFC|YBO)/.*",
-            // Others
-            "(ALBT|CELO|REEF|MIR|TORN|AGIX|HIVE|WNXM|1EARTH|ILA|BOBA|CTXC|CWAR|HBAR|NMR|OMG|ONG|ARDR|PEOPLE|DMTR|MEM|AMPL|XYM|POLX|CARR|SKEY|KLV|KRL|KOK|DMTR|CHMB|CPOOL|MLS|RBS|SRBS|SYLO|VR|KARA|LUNA|SRBP|PSL|AI|QKC|EPK|BAX|UQC|ZBC|PLATO|ACA|XCN|MC|FTT|SRM|PRMX|SWP|XWG|PIAS|KICKS|TIME|BNX|WEMIX|HI.*|ALBT|ANC|CIX100)/.*"
-            
-            ".*1L/.*",
-            ".*1S/.*",
-            ".*2L/.*",
-            ".*2S/.*",
-            ".*3L/.*",
-            ".*3S/.*",
-            ".*5L/.*",
-            ".*5S/.*",
-            ".*BEAR/.*",
-            ".*BEAR2021/.*",
-            ".*BULL",
-            ".*BULL/.*",
-            ".*BULL2021/.*",
-            ".*DOWN/.*",
-            ".*HALF/.*",
-            ".*HEDGE/.*",
-            ".*PERP",
-            ".*PERP/.*",
-            ".*UP/.*",
-            ".*_PREMIUM",
-            ".*_PREMIUM/.*",
-            "AUD/.*",
-            "BIDR/.*",
-            "BNB/.*",
-            "BTC/.*",
-            "BUSD/.*",
-            "BVND/.*",
-            "DAI/.*",
-            "EUR/.*",
-            "GBP/.*",
-            "IDRT/.*",
-            "NGN/.*",
-            "PAX/.*",
-            "PSG/.*",
-            "RUB/.*",
-            "TRY/.*",
-            "TUSD/.*",
-            "UAH/.*",
-            "USDC/.*",
-            "VAI/.*",
-            "ATM/.*",
-            "ACM/.*",
-            "JUV/.*",
-            "ASR/.*",
-            "BAR/.*",
-            "AFA/.*",
-            "ROUSH/.*",
-            "ALA/.*",
-            "UFC/.*",
-            "FOR/.*",
-            "LEG/.*",
-            "UCH/.*",
-            "GOZ/.*",
-            "CITY/.*",
-            "LOCK-1/.*",
-            "PFL/.*",
-            "STV/.*",
-            "IBFK/.*",
-            "ALL/.*",
-            "NAVI/.*",
-            "YBO/.*",
-            "NOV/.*",
-            "TRA/.*",
-            "TH/.*",
-            "CAI/.*",
-            "APL/.*",
-            "GAL/.*",
-            "OG/.*",
-            "HBAR/.*",
-            "NMR/.*",
-            "CHZ/.*",
-            "XVS/.*",
-            "CTXC/.*",
-            "ZEN/.*",
-            "LUNA/.*",
-            "LUNC/.*"
+            // FAN Tokens
+            "(ACM|AFA|ALA|ALL|ALPINE|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LEG|LOCK-1|NAVI|NMR|NOV|PFL|PORTO|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO|ARG)/.*",
+            // Other Coins
+            "(1EARTH|ILA|MEM|AMPL|BOBA|CWAR|OMG|XYM|POLX|CARR|SKEY|KLV|KRL|DMTR|MLS|CEL|TORN|DOME|LUNA|ZBC|AZY|ACA|FTT|SRM|YFII|WEMIX|ANC|MIR|CELT|BNX|STG|REP|HNT|WXT|PEPE|GFT|SWRV|ID|RFUEL|PLS)/.*"
         ]
     },
     "pairlists": [    {
