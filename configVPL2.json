@@ -16,25 +16,22 @@
     },
     "entry_pricing": {
         "price_side": "ask",
-        "ask_last_balance": 0.0,
         "use_order_book": false,
         "order_book_top": 1,
+        "price_last_balance": 0.0,
         "check_depth_of_market": {
             "enabled": false,
             "bids_to_ask_delta": 1
         }
     },
-    "exit_pricing": {
+    "exit_pricing":{
         "price_side": "bid",
         "use_order_book": false,
-        "order_book_min": 1,
-        "order_book_max": 1,
-        "use_sell_signal": true,
-        "sell_profit_only": false,
-        "ignore_roi_if_buy_signal": false
+        "order_book_top": 1,
+        "price_last_balance": 0.0
     },
     "exchange": {
-        "name": "binance",
+        "name": "okx",
         "key": "",
         "secret": "",
         "ccxt_config": {},
