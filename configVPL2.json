@@ -34,6 +34,7 @@
         "name": "okx",
         "key": "",
         "secret": "",
+        "password":"",
         "ccxt_config": {},
         "ccxt_async_config": {
             "enableRateLimit": true,
@@ -61,7 +62,7 @@
         "sort_key": "quoteVolume",
         "refresh_period": 1800
     },
-    {"method": "AgeFilter", "min_days_listed": 7},
+    {"method": "AgeFilter", "min_days_listed": 3},
     {"method": "SpreadFilter", "max_spread_ratio": 0.0075},
     {"method": "PriceFilter", "low_price_ratio": 0.003},
     {
@@ -98,7 +99,7 @@
     },
     "api_server": {
         "enabled": true,
-        "listen_ip_address": "127.0.0.1",
+        "listen_ip_address": "0.0.0.0",
         "listen_port": 8080,
         "verbosity": "error",
         "enable_openapi": false,
